@@ -1,0 +1,169 @@
+{
+  "name": "Sidratul Muntaha",
+  "role": "C / C++ / Python Learner & Web Development Enthusiast",
+  "tagline": "Coding, capturing moments, and crafting stories.",
+  "bio": "Hi! I'm Sidratul Muntaha. I've learned C, C++, and Python, and I'm currently diving into web development and networking. I also enjoy creative work — writing, photography, videography, and gaming.",
+  "links": {
+    "github": "https://github.com/your-github-username",
+    "email": "your.email@example.com",
+    "linkedin": "https://linkedin.com/in/your-username",
+    "twitter": "",
+    "instagram": ""
+  },
+  "images": {
+    "avatar": "avatar.svg"
+  },
+  "skills": [
+    {
+      "name": "C",
+      "level": "Intermediate",
+      "icon": "⚙️"
+    },
+    {
+      "name": "C++",
+      "level": "Intermediate",
+      "icon": "⚙️"
+    },
+    {
+      "name": "Python",
+      "level": "Intermediate",
+      "icon": "🐍"
+    },
+    {
+      "name": "Web Development",
+      "level": "Beginner",
+      "icon": "🌐"
+    },
+    {
+      "name": "Networking",
+      "level": "Beginner",
+      "icon": "🔗"
+    },
+    {
+      "name": "Writing",
+      "level": "Intermediate",
+      "icon": "✍️"
+    },
+    {
+      "name": "Photography",
+      "level": "Intermediate",
+      "icon": "📷"
+    },
+    {
+      "name": "Videography",
+      "level": "Beginner",
+      "icon": "🎥"
+    },
+    {
+      "name": "Gaming",
+      "level": "Intermediate",
+      "icon": "🎮"
+    }
+  ],
+  "projects": [
+    {
+      "title": "My First Portfolio Website",
+      "description": "This very website! Built with HTML, CSS, JavaScript and Node.js. My first step into full web development.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Node.js"
+      ],
+      "github": "https://github.com/your-github-username",
+      "live": "",
+      "image": "",
+      "private": false
+    },
+    {
+      "title": "Python Mini Projects",
+      "description": "A collection of small Python programs I wrote while learning — calculators, games, and automation scripts.",
+      "tech": [
+        "Python"
+      ],
+      "github": "https://github.com/your-github-username",
+      "live": "",
+      "image": "",
+      "private": false
+    },
+    {
+      "title": "C++ Algorithms Practice",
+      "description": "Solutions and notes from my journey learning data structures and algorithms in C++.",
+      "tech": [
+        "C++"
+      ],
+      "github": "https://github.com/your-github-username",
+      "live": "",
+      "image": "",
+      "private": false
+    },
+    {
+      "title": "Placeholder Project",
+      "description": "Describe your next project here.",
+      "tech": [
+        "Your",
+        "Tech"
+      ],
+      "github": "",
+      "live": "",
+      "image": "",
+      "private": false
+    },
+    {
+      "title": "Secret Project",
+      "description": "Only I should see this",
+      "tech": [],
+      "github": "",
+      "live": "",
+      "image": "",
+      "private": true
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Certificate Name",
+      "issuer": "Issuing Organization",
+      "year": "2026",
+      "url": "",
+      "private": false
+    },
+    {
+      "title": "Another Certificate",
+      "issuer": "Issuing Organization",
+      "year": "2025",
+      "url": "",
+      "private": false
+    }
+  ],
+  "creative": [
+    {
+      "type": "writing",
+      "title": "Sample Poem / Story Title",
+      "description": "A short description of this piece.",
+      "image": "",
+      "private": false
+    },
+    {
+      "type": "photography",
+      "title": "Sunset Study",
+      "description": "A photo captured during golden hour.",
+      "image": "sample-photo.jpg",
+      "private": false
+    },
+    {
+      "type": "videography",
+      "title": "Short Film: 'Moments'",
+      "description": "A short video project I edited.",
+      "image": "",
+      "private": false
+    },
+    {
+      "type": "gaming",
+      "title": "Game Highlights",
+      "description": "My favorite gaming moments and achievements.",
+      "image": "",
+      "private": false
+    }
+  ],
+  "footerNote": "Built with love using HTML, CSS, JavaScript & Node.js."
+}

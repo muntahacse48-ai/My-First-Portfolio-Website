@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <!-- Login screen -->
+    <div id="view-login" class="panel" hidden>
+      <h1>Admin Login</h1>
+      <form id="login-form" autocomplete="off">
+        <label>Username
+          <input name="username" required autocomplete="username" />
+        </label>
+        <label>Password
+          <input name="password" type="password" required autocomplete="current-password" />
+        </label>
+        <button type="submit" class="btn">Sign in</button>
+        <p id="login-error" class="error" hidden></p>
+      </form>
+    </div>
+
+    <!-- Main admin app -->
+    <div id="view-app" hidden>
+      <header class="topbar">
+        <span class="brand">Portfolio <em>Admin</em></span>
+        <nav class="tabs">
+          <button class="tab active" data-tab="profile">Profile</button>
+          <button class="tab" data-tab="messages">Messages <span id="unread-badge" class="badge" hidden></span></button>
+          <button class="tab" data-tab="settings">Settings</button>
+        </nav>
+        <button id="logout-btn" class="btn ghost">Log out</button>
+      </header>
+
+      <!-- Profile editor -->
+      <section id="tab-profile" class="tab-panel active">
+        <div class="toolbar">
+          <h2>Edit Profile &amp; Content</h2>
+          <span id="save-status" class="save-status"></span>
+          <button id="save-profile" class="btn primary">Save changes</button>
+        </div>
+        <form id="profile-form">
+          <fieldset>
+            <legend>Basic info</legend>
+            <div class="grid">
+              <label>Name <input name="name" /></label>
+              <label>Role <input name="role" /></label>
+              <label>Avatar filename <input name="images.avatar" placeholder="avatar.svg" /></label>
+            </div>
+            <label>Tagline <input name="tagline" /></label>
+            <label>Bio <textarea name="bio" rows="3"></textarea></label>
+            <label>Footer note <input name="footerNote" /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Links (leave blank to hide)</legend>
+            <div class="grid">
+              <label>GitHub <input name="links.github" /></label>
+              <label>LinkedIn <input name="links.linkedin" /></label>
+              <label>Email <input name="links.email" /></label>
+              <label>Twitter <input name="links.twitter" /></label>
+              <label>Instagram <input name="links.instagram" /></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Skills</legend>
+            <div id="skills-list" class="array-list"></div>
+            <button type="button" class="btn ghost" data-add="skills">+ Add skill</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Projects</legend>
+            <div id="projects-list" class="array-list"></div>
+            <button type="button" class="btn ghost" data-add="projects">+ Add project</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Certificates</legend>
+            <div id="certificates-list" class="array-list"></div>
+            <button type="button" class="btn ghost" data-add="certificates">+ Add certificate</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Creative work</legend>
+            <div id="creative-list" class="array-list"></div>
+            <button type="button" class="btn ghost" data-add="creative">+ Add creative item</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Messages inbox -->
+      <section id="tab-messages" class="tab-panel" hidden>
+        <h2>Messages</h2>
+        <div id="messages-list" class="messages"></div>
+        <p id="messages-empty" class="muted" hidden>No messages yet.</p>
+      </section>
+
+      <!-- Settings -->
+      <section id="tab-settings" class="tab-panel" hidden>
+        <h2>Settings</h2>
+        <form id="password-form">
+          <label>Current password <input name="currentPassword" type="password" required /></label>
+          <label>New password (min 8 chars) <input name="newPassword" type="password" required minlength="8" /></label>
+          <button class="btn primary" type="submit">Change password</button>
+          <p id="password-status" class="save-status"></p>
+        </form>
+        <p class="hint">Passwords are stored as a one-way hash — never in plaintext.</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

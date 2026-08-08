@@ -1,0 +1,17 @@
+{
+  "name": "sidratul-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Sidratul Muntaha",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "setup": "node scripts/setup.js",
+    "export": "node scripts/export.js"
+  },
+  "keywords": ["portfolio", "node", "express"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

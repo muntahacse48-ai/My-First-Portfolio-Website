@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sidratul Muntaha</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Get in Touch</h1>
+      <p class="section-sub">Let's connect! Reach me through any of these channels.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" id="contact-email" href="#">
+          <span class="contact-icon">📧</span>
+          <h3>Email</h3>
+          <p id="contact-email-text"></p>
+        </a>
+        <a class="contact-card" id="contact-github" href="#" target="_blank" rel="noopener">
+          <span class="contact-icon">🐙</span>
+          <h3>GitHub</h3>
+          <p>Check out my code</p>
+        </a>
+        <a class="contact-card" id="contact-linkedin" href="#" target="_blank" rel="noopener">
+          <span class="contact-icon">💼</span>
+          <h3>LinkedIn</h3>
+          <p>Let's connect professionally</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="contact-form-section">
+      <h2>Send me a message</h2>
+      <p class="section-sub">Fill this out and it lands straight in my inbox.</p>
+      <form id="contact-form" class="contact-form">
+        <label>
+          Name <span class="req">*</span>
+          <input name="name" required maxlength="120" />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" maxlength="200" />
+        </label>
+        <label>
+          Subject
+          <input name="subject" maxlength="200" />
+        </label>
+        <label>
+          Message <span class="req">*</span>
+          <textarea name="message" rows="6" required maxlength="5000"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="contact-form-status" class="section-sub" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="data/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

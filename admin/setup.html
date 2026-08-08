@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Set admin password</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <div class="panel">
+      <h1>Create admin password</h1>
+      <p class="muted">You normally do this with <code>npm run setup</code>. If you opened this page manually, provide the username and a password you want to use.</p>
+      <form id="setup-form" autocomplete="off">
+        <label>Username
+          <input name="username" value="admin" required />
+        </label>
+        <label>Password (min 8 chars)
+          <input name="password" type="password" required minlength="8" autocomplete="new-password" />
+        </label>
+        <button class="btn" type="submit">Set password</button>
+        <p id="setup-error" class="error" hidden></p>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

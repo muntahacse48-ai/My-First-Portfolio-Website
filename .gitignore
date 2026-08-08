@@ -1,0 +1,19 @@
+# Private / sensitive data - never commit these
+data/admin.json
+data/messages.json
+
+# Keep per-machine env/credentials out of the repo
+.env
+.env.*
+*.local
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
